@@ -1,0 +1,24 @@
+{
+  "name": "employeetracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "employeeReadData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnovelli1/employeetracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnovelli1/employeetracker/issues"
+  },
+  "homepage": "https://github.com/dnovelli1/employeetracker#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "mysql": "^2.18.1"
+  }
+}
