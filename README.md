@@ -51,7 +51,7 @@ In this project I was prompted with the ask of creating an employee directory fr
     
 In order to contribute, you will need to know the following languges:
     
-  - Node, Javascript.
+  - Node, Javascript, MySQL.
 
 ## Tests
 
