@@ -165,7 +165,7 @@ const addRole = () => {
             message: 'What is the salary of this role?',
             name: 'salary',
             validate: (salary) => {
-                if (salary.match("[0-9]+.") && (salary.length < 6)) {
+                if (salary.match("[0-9]+(\.[0-9][0-9]?)?") && (salary.length < 10)) {
                     return true;
                 } else {
                     console.log('You entered an invalid input!');
@@ -246,7 +246,7 @@ const viewRoles = () => {
 };
 
 const viewAllEmployees = () => {
-    connection.query('SELECT * FROM employee', (err, res) => {
+    connection.query('SELECT e.id, CONCAT (e.first_name, " ", e.last_name) AS employee, role.title, role.salary, department.dep_name AS department, CONCAT (m.first_name, " ", m.last_name) AS manager FROM employee e LEFT JOIN role ON e.role_id = role.id LEFT JOIN department ON role.department_id = department.id LEFT JOIN employee m ON e.manager_id = m.id', (err, res) => {
         if (err) throw err;
         console.table(res);
         startDirect();
