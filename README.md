@@ -8,7 +8,7 @@
 
 In this project I was prompted with the ask of creating an employee directory from scratch! In order to do so, I needed to create an initial database with 3 different tables (employees, role, department). After creating the database I needed to set up my interactions with the database through Node.js. I created the employeeReadData.js where I have all of my user interactions through inquirer and connection.query. The user can now add, delete and view all tables in the console. This application is very simple to run and easily manageable. Please have a look at the below video to see an example of how it's used:
 
-[Video]()
+[Video](https://drive.google.com/file/d/1e56N9xqAhQwnppPThFwKvYFUOz9sH4bv/view?usp=sharing)
 
 
 
