@@ -47,7 +47,6 @@ const startDirect = () => {
             case 'View All Departments': 
                 viewDepartments();
             break;
-
             case 'Add Department':
                 addDepartment();
             break;
@@ -260,9 +259,6 @@ const viewDepartments = () => {
         startDirect();
     })
 };
-
-
-
 
 connection.connect(function(err) {
     if (err) throw err;
